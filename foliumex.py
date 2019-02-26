@@ -2,6 +2,7 @@ import folium
 from geopy.geocoders import Nominatim
 from geopy.exc import GeocoderTimedOut
 
+# function to get lat and lang from address
 def do_geocode(address):
     try:
         return nom.geocode(address, timeout=10)
